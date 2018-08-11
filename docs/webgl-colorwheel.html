@@ -127,6 +127,7 @@
 
         canvas.addEventListener('mousemove', ({ x, y }) => {
             gl.uniform3f(shiftLocation, x / width, y / height, 0);
+            draw();
         });
 
         function draw() {
@@ -137,7 +138,7 @@
             );
         }
 
-        draw(0);
+        draw();
     </script>
 </body>
 </html>
